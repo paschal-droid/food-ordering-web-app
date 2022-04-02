@@ -1,0 +1,8 @@
+.container {
+    padding: 4rem 2rem;
+    display: flex;
+}
+
+.left {
+    margin-top: 30px;
+}

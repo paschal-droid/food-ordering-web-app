@@ -1,0 +1,45 @@
+.container {
+    background: var(--clr-black);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-roboto);
+    margin-top: 4rem;
+}
+
+.services, .about, .contact {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+}
+
+.container p {
+    font-size: 14px;
+    align-self: center;
+    font-style: italic;
+    font-family: var(--font-montserrat);
+    cursor: pointer;
+}
+
+.container p:hover {
+    color: var(--clr-red);
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
